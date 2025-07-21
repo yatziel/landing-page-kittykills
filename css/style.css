@@ -6,3 +6,34 @@
   
 */
 
+/* Header */
+
+.header {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 100;
+}
+
+/* Navbar */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-normal);
+}
+
+.navbar-menu {
+  display: flex;
+  gap: var(--space-medium);
+}
+
+.navbar-menu a {
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+}
+
+.navbar-menu a:hover {
+  color: var(--green-color);
+}

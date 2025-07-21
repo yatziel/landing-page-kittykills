@@ -13,6 +13,10 @@
 
   --font-primary: 'Martel Sans', sans-serif;
   --font-secondary: 'Lilita One', sans-serif;
+
+  --space-small: 16px;
+  --space-normal: 24px;
+  --space-medium: 32px;
 }
 
 body {
@@ -29,4 +33,25 @@ h5,
 h6 {
   font-family: var(--font-secondary);
   color: var(--dark-color);
+}
+
+/* Buttons */
+
+.button-primary {
+  display: flex;
+  align-items: center;
+  gap: var(--space-small);
+  padding: var(--space-small) var(--space-normal);
+  background-color: var(--green-color);
+  color: var(--light-color);
+  border-radius: 32px;
+  font-family: var(--font-secondary);
+  text-transform: uppercase;
+  font-size: 1.125rem;
+  transition: background-color 0.3s ease;
+}
+
+.button-primary:hover {
+  color: var(--dark-color);
+  background-color: var(--pink-color);
 }
