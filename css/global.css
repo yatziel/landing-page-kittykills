@@ -1,0 +1,32 @@
+/* 
+  Estilos Globales
+  
+  Aquí vamos a definir estilos y variables que se reutilicen en todo el sitio.
+
+*/
+
+:root {
+  --green-color: #a8be43;
+  --pink-color: #c03ce6;
+  --dark-color: #13132f;
+  --light-color: #f0f0f0;
+
+  --font-primary: 'Martel Sans', sans-serif;
+  --font-secondary: 'Lilita One', sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--light-color);
+  color: var(--dark-color);
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-secondary);
+  color: var(--dark-color);
+}
