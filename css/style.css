@@ -13,6 +13,8 @@
   width: 100%;
   top: 0;
   z-index: 100;
+  background-color: var(--dark-color-transparent);
+  backdrop-filter: blur(10px);
 }
 
 /* Navbar */
@@ -33,6 +35,7 @@
   font-family: var(--font-secondary);
   text-transform: uppercase;
   color: var(--light-color);
+  transition: color 0.3s ease;
 }
 
 .navbar-menu a:hover {
@@ -42,7 +45,7 @@
 /* Hero */
 
 .hero {
-  height: 100vh;
+  height: 90vh;
   min-height: 700px;
   background-image: url('../assets/images/hero-background.png');
   background-size: cover;
@@ -60,6 +63,8 @@
 
 .hero-content p {
   font-size: 1.125rem;
+  line-height: 1.6;
+  width: 70%;
   margin-bottom: var(--space-medium);
   max-width: 80%;
 }
@@ -73,4 +78,128 @@
 .hero-icons {
   display: flex;
   gap: var(--space-small);
+}
+
+/* Characters */
+
+.characters-content {
+  display: flex;
+  align-items: center;
+}
+
+.characters-thumbnails {
+  width: 50%;
+}
+
+.thumbnails-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-small);
+}
+
+.thumbnail-item {
+  cursor: pointer;
+  filter: brightness(0.6);
+  transition: filter 0.3s ease;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.thumbnail-item:hover {
+  filter: brightness(1);
+}
+
+.character-showcase {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.character-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 1rem;
+}
+
+.character-name {
+  font-size: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+  margin-bottom: var(--space-small);
+}
+
+.character-description {
+  text-align: center;
+}
+
+/* Media */
+
+.media-header {
+  text-align: center;
+  margin-bottom: var(--space-medium);
+}
+
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-track {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-small);
+  margin-bottom: var(--space-medium);
+}
+
+.carousel-item {
+  position: relative;
+  cursor: pointer;
+  border-radius: 1rem;
+  overflow: hidden;
+}
+
+.carousel-item img {
+  width: 100%;
+  height: auto;
+  filter: brightness(0.6);
+  transition: filter 0.3s ease;
+}
+
+.carousel-item:hover img {
+  filter: brightness(1);
+}
+
+.carousel-item span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 2rem;
+  color: var(--light-color);
+  transition: color 0.3s ease;
+}
+
+.carousel-item:hover span {
+  color: var(--green-color);
+}
+
+.carousel-controls {
+  display: flex;
+  justify-content: center;
+}
+
+.carousel-controls button {
+  cursor: pointer;
+  color: var(--dark-color);
+  transition: color 0.3s ease;
+}
+
+.carousel-controls button:hover {
+  color: var(--pink-color);
+}
+
+.carousel-controls span {
+  font-size: 3rem;
 }

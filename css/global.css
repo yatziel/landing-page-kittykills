@@ -11,18 +11,32 @@
   --dark-color: #13132f;
   --light-color: #f0f0f0;
 
+  --dark-color-transparent: #13132fcc;
+
   --font-primary: 'Mi Fuentecita', sans-serif;
   --font-secondary: 'Lilita One', sans-serif;
 
   --space-small: 16px;
   --space-normal: 24px;
   --space-medium: 32px;
+
+  /* Header height for scroll offset */
+  --header-height: 100px;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   font-family: var(--font-primary);
   background-color: var(--light-color);
   color: var(--dark-color);
+}
+
+section {
+  scroll-margin-top: var(--header-height);
+  margin-bottom: var(--space-medium);
 }
 
 h1,
@@ -33,6 +47,17 @@ h5,
 h6 {
   font-family: var(--font-secondary);
   color: var(--dark-color);
+  text-transform: uppercase;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 1px;
+  margin-bottom: var(--space-normal);
+}
+
+span {
+  font-size: inherit;
 }
 
 /* Buttons */
@@ -48,7 +73,7 @@ h6 {
   font-family: var(--font-secondary);
   text-transform: uppercase;
   font-size: 1.125rem;
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .button-primary:hover {
@@ -71,6 +96,13 @@ h6 {
 }
 
 .button-secondary:hover {
-  color: var(--light-color);
   background-color: var(--pink-color);
+}
+
+/* Wrapper */
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--space-medium);
 }

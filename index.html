@@ -20,6 +20,8 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" />
   </head>
   <body>
+    <!-- Header -->
+
     <header class="header">
       <nav class="navbar">
         <div class="navbar-logo">
@@ -27,8 +29,8 @@
         </div>
 
         <ul class="navbar-menu">
-          <li><a href="#">Characters</a></li>
-          <li><a href="#">Media</a></li>
+          <li><a href="#characters">Characters</a></li>
+          <li><a href="#media">Media</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Concepts</a></li>
           <li><a href="#">Merch</a></li>
@@ -40,6 +42,7 @@
 
     <main>
       <!-- Hero -->
+
       <section class="hero">
         <div class="hero-content">
           <h1>
@@ -48,7 +51,7 @@
 
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam vitae dignissimos dolor consequatur unde obcaecati, pariatur repellat eius laudantium voluptatem ex illo laboriosam corrupti,
-            facilis eveniet ut esse provident iusto?
+            facilis eveniet ut esse provident iusto.
           </p>
 
           <div class="hero-actions">
@@ -61,6 +64,65 @@
             <img src="./assets/images/steam.svg" alt="Logotipo Steam" />
             <img src="./assets/images/switch.svg" alt="Logotipo Swicth" />
             <img src="./assets/images/xbox.svg" alt="Logotipo Xbox" />
+          </div>
+        </div>
+      </section>
+
+      <!-- Characters -->
+      <section class="characters" id="characters">
+        <div class="wrapper">
+          <div class="characters-header">
+            <h2 class="section-title">Characters</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="characters-content">
+            <div class="characters-thumbnails">
+              <ul class="thumbnails-list">
+                <li class="thumbnail-item"><img src="./assets/images/thumb-1.png" alt="Character 1 Thumbnail" /></li>
+                <li class="thumbnail-item"><img src="./assets/images/thumb-2.png" alt="Character 2 Thumbnail" /></li>
+                <li class="thumbnail-item"><img src="./assets/images/thumb-3.png" alt="Character 3 Thumbnail" /></li>
+                <li class="thumbnail-item"><img src="./assets/images/thumb-4.png" alt="Character 4 Thumbnail" /></li>
+                <li class="thumbnail-item"><img src="./assets/images/thumb-5.png" alt="Character 5 Thumbnail" /></li>
+                <li class="thumbnail-item"><img src="./assets/images/thumb-6.png" alt="Character 6 Thumbnail" /></li>
+              </ul>
+            </div>
+            <div class="character-showcase">
+              <img class="character-image" src="./assets/images/character-1.png" alt="Character 1 Full Image" />
+              <div class="character-info">
+                <h3 class="character-name">Kitty The Fighter</h3>
+                <p class="character-description">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Media -->
+      <section class="media" id="media">
+        <div class="wrapper">
+          <div class="media-header">
+            <h2 class="section-title">Media</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </div>
+          <div class="carousel">
+            <div class="carousel-track">
+              <article class="carousel-item">
+                <img src="./assets/images/media-1.png" alt="Media 1" />
+                <span class="material-symbols-outlined"> play_circle </span>
+              </article>
+              <article class="carousel-item">
+                <img src="./assets/images/media-2.png" alt="Media 1" />
+                <span class="material-symbols-outlined"> play_circle </span>
+              </article>
+              <article class="carousel-item">
+                <img src="./assets/images/media-3.png" alt="Media 1" />
+                <span class="material-symbols-outlined"> play_circle </span>
+              </article>
+            </div>
+            <div class="carousel-controls">
+              <button><span class="material-symbols-outlined"> arrow_circle_left </span></button>
+              <button><span class="material-symbols-outlined"> arrow_circle_right </span></button>
+            </div>
           </div>
         </div>
       </section>
