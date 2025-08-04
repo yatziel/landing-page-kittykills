@@ -22,6 +22,8 @@
   justify-content: space-between;
   align-items: center;
   padding: var(--space-normal);
+  background-color: var(--dark-color-transparent);
+  backdrop-filter: blur(6px);
 }
 
 .navbar-menu {
@@ -185,7 +187,7 @@
 }
 
 .carousel-controls button:hover {
-  color: var(--pink-color)
+  color: var(--pink-color);
 }
 
 .carousel-controls span {
