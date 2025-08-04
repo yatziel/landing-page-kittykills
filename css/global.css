@@ -50,6 +50,10 @@ button {
   cursor: pointer;
 }
 
+section {
+  margin-bottom: var(--space-medium);
+}
+
 /* Buttons */
 
 .button-primary {
