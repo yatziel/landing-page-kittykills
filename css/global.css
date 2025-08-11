@@ -28,6 +28,7 @@
 }
 
 html {
+  font-size: 18px; /* Default */
   scroll-behavior: smooth;
 }
 
@@ -49,13 +50,17 @@ h6 {
 }
 
 h2 {
-  font-size: 2rem;
+  font-size: 2rem; 
   margin-bottom: 1rem;
 }
 
 h3 {
   font-size: 1.75rem;
   margin-bottom: 0.8rem;
+}
+
+p {
+  line-height: 1.75rem;
 }
 
 button {

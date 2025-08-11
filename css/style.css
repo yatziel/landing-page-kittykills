@@ -193,3 +193,46 @@
 .carousel-controls span {
   font-size: 3rem;
 }
+
+/* About */
+
+.about {
+  background:
+    /* Capas */
+    /* Layer 1 */ linear-gradient(90deg, rgba(19, 19, 47, 0.7) 0%, rgba(81, 22, 78, 0.7) 100%),
+    /* Separa por comas */ /* Layer 2 */ url('../assets/images/about-background.png') center center no-repeat;
+  background-size: cover;
+}
+
+.about > div {
+  display: flex;
+  padding: var(--space-large);
+}
+
+.about-image,
+.about-content {
+  width: 50%;
+}
+
+.about-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 240px;
+  min-width: 200px;
+}
+
+.about-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about-content h2,
+.about-content p {
+  color: var(--light-color);
+}
